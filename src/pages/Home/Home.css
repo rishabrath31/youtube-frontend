@@ -1,0 +1,31 @@
+.container {
+  background: #f9f9f9;
+  padding-left: 17%;
+  padding-right: 2%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: padding-left 0.3s ease-in-out, padding-right 0.3s ease-in-out,
+    background 0.3s ease-in-out;
+}
+
+.large-container {
+  padding-left: 7%;
+  transition: padding-left 0.3s ease-in-out;
+}
+/* NEW NEW */
+@media (max-width: 1024px) {
+  .video-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 568px) {
+  .container {
+    padding-left: 0%;
+  }
+}

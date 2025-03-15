@@ -1,0 +1,51 @@
+.category-bar-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: white;
+  padding: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-radius: 50px;
+}
+
+.category-bar {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none;      /* Hide scrollbar for Firefox */
+  flex-grow: 1;
+}
+
+.category-bar::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari */
+}
+
+.category-btn {
+  background: #f0f0f0;
+  border: none;
+  padding: 8px 15px;
+  margin-right: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: background 0.3s, color 0.3s;
+}
+
+.category-btn.active {
+  background: black;
+  color: white;
+  font-weight: bold;
+}
+
+.scroll-arrow {
+  position: absolute;
+  right: 5px;
+  background: white;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 5px;
+}

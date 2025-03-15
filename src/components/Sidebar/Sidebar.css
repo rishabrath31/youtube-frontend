@@ -1,0 +1,98 @@
+.sidebar {
+  background: #fff;
+  width: 17%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  padding-left: 2%;
+  padding-top: 80px;
+  transition: width 0.3s ease-in-out, padding-left 0.3s ease-in-out;
+  padding-right: 2%;
+}
+
+.shortcut-links img {
+  width: 20px;
+  margin-right: 20px;
+}
+
+.side-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: fit-content;
+  flex-wrap: wrap;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.side-link:hover {
+  transform: scale(1.05);
+}
+
+.sidebar hr {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  width: 85%;
+  transition: width 0.3s ease-in-out;
+}
+
+.subscribed-list h3 {
+  font-size: 13px;
+  margin: 20px 0;
+  color: #5a5a5a;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.subscribed-list img {
+  width: 25px;
+  border-radius: 50%;
+  margin-right: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.subscribed-list img:hover {
+  transform: scale(1.1);
+}
+
+.small-sidebar {
+  width: 5%;
+  transition: width 0.3s ease-in-out;
+}
+
+.small-sidebar p,
+.small-sidebar h3 {
+  display: none;
+}
+
+.small-sidebar hr {
+  width: 50%;
+  margin-bottom: 25px;
+  transition: width 0.3s ease-in-out;
+}
+.small-sidebar .subscribed-list {
+  display: none;
+}
+
+/* NEW NEW */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 0;
+    overflow: hidden;
+  }
+
+  .small-sidebar {
+    width: 10%;
+  }
+}
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}

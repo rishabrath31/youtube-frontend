@@ -32,6 +32,8 @@ const PlayVideo = () => {
   const [editCommentId, setEditCommentId] = useState(null);
 
   const { videos } = useSelector((state) => state?.videosData || {});
+  const { _id } = useSelector((state) => state?.userCredential.user || {});
+
   const dispatch = useDispatch();
 
   const video = videos.find((video) => video._id === videoId);
@@ -253,13 +255,13 @@ const PlayVideo = () => {
                 <div className="comment-action">
                   <img src={like} alt="Like" /> <span>244</span>
                   <img src={dislike} alt="Dislike" />
-                  <TrashIcon
+                  {_id === comment?.userId?._id && <TrashIcon
                     size={18}
                     className="delete-icon"
                     style={{ color: "red", cursor: "pointer" }}
                     onClick={() => handleDeleteComment(comment._id)}
-                  />
-                  <EditIcon
+                  />}
+                  {_id === comment?.userId?._id && <EditIcon
                     size={18}
                     className="edit-icon"
                     style={{
@@ -270,7 +272,7 @@ const PlayVideo = () => {
                     onClick={() =>
                       handleEditComment(comment._id, comment.commentText)
                     }
-                  />
+                  />}
                 </div>
               </div>
             </div>

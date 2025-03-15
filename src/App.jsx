@@ -4,9 +4,9 @@ import Navbar from "./components/Navbar/Navbar";
 import { useDispatch } from "react-redux";
 import { getAndUpdateVideoData } from "./redux/reducers/videoReducer";
 import { Toaster } from "react-hot-toast";
-import Home from "./Pages/Home/Home";
-import Video from "./Pages/Video/Video";
-import LoginPage from "./Pages/Login/LoginPage";
+import Home from "./pages/Home/Home";
+import Video from "./pages/Video/Video";
+import LoginPage from "./pages/Login/LoginPage";
 
 const App = () => {
   const [sidebar, setSidebar] = useState(true);

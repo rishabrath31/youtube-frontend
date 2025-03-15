@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import Home from "./Pages/Home/Home";
-import Video from "./Pages/Video/Video";
-import LoginPage from "./Pages/Login/LoginPage";
 import { useDispatch } from "react-redux";
 import { getAndUpdateVideoData } from "./redux/reducers/videoReducer";
 import { Toaster } from "react-hot-toast";
+import Home from "./Pages/Home/Home";
+import Video from "./Pages/Video/Video";
+import LoginPage from "./Pages/Login/LoginPage";
 
 const App = () => {
   const [sidebar, setSidebar] = useState(true);

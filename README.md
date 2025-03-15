@@ -1,8 +1,14 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Youtube Clone-Frontend
+Technologies Used
+Frontend (React Vite)
+React.js – UI development
+React Router – Navigation
+Axios – API calls
+External Css
+Features
+✅ User authentication (JWT-based Sign Up, Login, Logout)
+✅ Video upload & streaming
+✅ Like, comment, and share videos
+✅ Search & filter videos
+✅ User profiles & subscriptions
+✅ Responsive UI
